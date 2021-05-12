@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ejercicio 5</title>
+  <style>
+    .container {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      flex-direction: row;
+      width: 800px;
+      height: 800px;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+    }
+    
+    .imagenes-bloque-uno {
+      display: flex;
+      height: 200px;
+      flex-direction: row;
+      width: 100%;
+    }
+    
+    .imagen-central {
+      height: 15em;
+      display: flex;
+    }
+    
+    .imagen-central img {
+      width: 780px;
+    }
+    
+    .box {
+      width: 25%;
+    }
+    
+    .box img {
+      height: 200px;
+      width: 90%;
+    }
+    
+    .imagenes-bloque-final {
+      height: 300px;
+      width: 97.5%;
+      display: flex;
+      box-sizing: border-box;
+      justify-content: space-between;
+    }
+    
+    .box-final {
+      width: 23%;
+      flex-wrap: wrap;
+      height: 200px;
+      align-self: flex-start;
+    }
+    
+    .box-final:nth-child(even) {
+      height: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="imagenes-bloque-uno">
+      <div class="box"><img src="./photo-1459262838948-3e2de6c1ec80.jpg" alt=""></div>
+      <div class="box"><img src="./photo-1518610134659-5ddc36a5f166.jpg" alt=""></div>
+      <div class="box"><img src="./photo-1600806343209-d8f624917fbe.jpg" alt=""></div>
+      <div class="box"><img src="./photo-1611561937862-9d0527d25f63.jpg" alt=""></div>
+
+    </div>
+    <div class="imagen-central">
+      <img src="./photo-1619969888884-6523aa49c6ff.jpg" alt="">
+    </div>
+    <div class="imagenes-bloque-final">
+      <img class="box-final" src="./photo-1617261585746-dc58beb5786a.jpg" alt="">
+      <img class="box-final" src="./photo-1620221496114-ab4f0ddeb8e8.jpg" alt="">
+      <img class="box-final" src="./photo-1620681405716-aa3b9aeb9944.jpg" alt="">
+      <img class="box-final" src="./photo-1620755320418-2b2733dc7a9a.jpg" alt="">
+    </div>
+  </div>
+</body>
+
+</html>
